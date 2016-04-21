@@ -122,24 +122,27 @@
             <br class=" visible-xs">
             <br class="visible-xs">
             <h4 class="sm-m-t-20 text">Say hello!</h4>
-            <form class="" role="form">
+
+
+
+            <form method="post" action="contactengine.php" role="form">
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group form-group-default">
-                    <label>Name</label>
-                    <input type="text" class="form-control">
+                    <label for="Name">Name:</label>
+                    <input type="text" name="Name" id="Name" class="form-control">
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="form-group form-group-default">
-                    <label>Email</label>
-                    <input type="text" class="form-control">
+                    <label for="Email">Email:</label>
+                    <input type="text" name="Email" id="Email" class="form-control">
                   </div>
                 </div>
               </div>
               <div class="form-group form-group-default">
-                <label>Message</label>
-                <textarea class="form-control" style="height:100px" placeholder="Type the message you'd like to send."></textarea>
+                <label for="Message">Message:</label>
+                <textarea name="Message" id="Message" class="form-control" style="height:100px" placeholder="Type the message you'd like to send."></textarea>
               </div>
               <button class="btn btn-white font-montserrat all-caps fs-11 pull-right sm-m-t-10">Send request</button>
               <div class="clearfix"></div>
@@ -147,6 +150,10 @@
           </div>
         </div>
       </section>
+
+
+
+
       <!-- END CONTACT SECION -->
       <!-- START GOOGLE MAP -->
       <section class="container-fluid  no-padding no-overflow sm-m-t-20">
